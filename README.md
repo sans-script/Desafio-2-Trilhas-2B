@@ -54,7 +54,8 @@ Para iniciar o projeto, execute o seguinte comando:
 npm start
 ```
 
-> **Note:** Este comando irá iniciar o Tailwind CLI em modo watch, compilando o arquivo `styles.css` para `dist/output.css` sempre que houver alterações.
+> [!NOTE]  
+> Este comando irá iniciar o Tailwind CLI em modo watch, compilando o arquivo `styles.css` para `dist/output.css` sempre que houver alterações.
 
 
 ## Visualização
@@ -65,7 +66,8 @@ Para visualizar a página, você pode utilizar a extensão Live Server no Visual
 
 Para subir as alterações feitas no projeto, siga os passos abaixo:
 
-> **Note:** Sempre execute o comando `git pull` antes de iniciar suas alterações para garantir que você está trabalhando com a versão mais recente do repositório remoto:
+> [!WARNING]
+> Sempre execute o comando `git pull` antes de iniciar suas alterações para garantir que você está trabalhando com a versão mais recente do repositório remoto:
 
    ```sh
    git pull origin main
