@@ -2,7 +2,28 @@
 
 ## Descrição
 
-Criação de um processo de inscrições por meio de um formulário estático
+Criação de um processo de inscrições por meio de um formulário estático.
+
+Este projeto utiliza as seguintes tecnologias:
+
+- **HTML5**: Para a estruturação do conteúdo da página.
+
+- **CSS3**: Para a estilização da página.
+
+- **Tailwind CSS**: Um framework de CSS utilitário que permite estilizar páginas rapidamente usando classes pré-definidas. [Tailwind CSS Documentation](https://tailwindcss.com/docs/styling-with-utility-classes).
+
+- **JavaScript**: Para adicionar interatividade à página.
+
+- **Node.js**: Para gerenciar dependências e scripts de build.
+
+- **npm**: Gerenciador de pacotes do Node.js para instalar e 
+gerenciar dependências.
+
+- **Git**: Para controle de versão e colaboração no código.
+
+- **Live Server**: Extensão do Visual Studio Code para recarregar a página automaticamente durante o desenvolvimento.
+
+O projeto seguirá o [design disponibilizado no Figma](https://www.figma.com/design/xMXycKv7AAwE7oVGJ1whpd/Desafio-2---Trilhas-2B?node-id=22-377&p=f&t=y4NR5blp1qxlMImV-0)
 
 ## Pré-requisitos
 
@@ -27,11 +48,14 @@ Criação de um processo de inscrições por meio de um formulário estático
 
 ## Execução
 
-Para iniciar o projeto e assistir as mudanças nos arquivos CSS, execute o seguinte comando:
+Para iniciar o projeto, execute o seguinte comando:
 
 ```sh
 npm start
 ```
+
+> **Note:** Este comando irá iniciar o Tailwind CLI em modo watch, compilando o arquivo `styles.css` para `dist/output.css` sempre que houver alterações.
+
 
 ## Visualização
 
@@ -41,18 +65,24 @@ Para visualizar a página, você pode utilizar a extensão Live Server no Visual
 
 Para subir as alterações feitas no projeto, siga os passos abaixo:
 
+> **Note:** Sempre execute o comando `git pull` antes de iniciar suas alterações para garantir que você está trabalhando com a versão mais recente do repositório remoto:
+
+   ```sh
+   git pull origin main
+   ```
+
 1. Adicione os arquivos alterados ao staging:
 
-    ```sh
-    git add .
-    ```
+   ```sh
+   git add .
+   ```
 2. Faça um commit das suas alterações:
 
-    ```sh
-    git commit -m "Descrição das alterações"
-    ```
+   ```sh
+   git commit -m "Descrição das alterações"
+   ```
 3. Envie as alterações para o repositório remoto:
 
-    ```sh
-    git push origin main
-    ```
+   ```sh
+   git push origin main
+   ```
