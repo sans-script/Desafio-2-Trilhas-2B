@@ -32,3 +32,27 @@ Para iniciar o projeto e assistir as mudanças nos arquivos CSS, execute o segui
 ```sh
 npm start
 ```
+
+## Visualização
+
+Para visualizar a página, você pode utilizar a extensão Live Server no Visual Studio Code. Após instalar a extensão, clique com o botão direito no arquivo `index.html` e selecione "Open with Live Server".
+
+## Subindo Alterações
+
+Para subir as alterações feitas no projeto, siga os passos abaixo:
+
+1. Adicione os arquivos alterados ao staging:
+
+    ```sh
+    git add .
+    ```
+2. Faça um commit das suas alterações:
+
+    ```sh
+    git commit -m "Descrição das alterações"
+    ```
+3. Envie as alterações para o repositório remoto:
+
+    ```sh
+    git push origin main
+    ```
