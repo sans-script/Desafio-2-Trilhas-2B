@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.box {
+  @apply flex justify-center items-center h-screen bg-blue-500;
+}
+
+.title {
+  @apply text-4xl text-white;
+}
