@@ -4,12 +4,104 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafio 2 - Trilhas</title>
-    <link rel="stylesheet" href="./dist/output.css"/>
+    <link rel="stylesheet" href="./dist/output.css" />
   </head>
-  <body>
-    <div class="box">
-      <h1 class="title">Testando o Tailwind!</h1>
-    </div>
-    <script src="script.js"></script>
+
+  <body class="w-screen h-screen flex">
+    <!-- Aqui começa a section com o nosso fomulário -->
+    <section class="flex flex-col w-full h-full p-16">
+
+      <!-- Aqui começa o botão de voltar -->
+      <div class="flex flex-col gap-6">
+        <div class="flex gap-2">
+          <img src="/assets/arrow-left.svg" alt srcset />
+          <a href="#" class="text-secondary">Voltar</a>
+        </div>
+        <!-- Aqui termina o botão de voltar -->
+
+        <!-- Aqui começa o cabeçalho -->
+        <div class="flex flex-col gap-2">
+          <h1 class="text-heading-2 font-semibold">Formulário de inscrição</h1>
+          <p class="text-heading-4 text-secondary font-normal">
+            Preencha os dados abaixo para fazer sua inscrição no Programa
+            Trilhas.
+          </p>
+        </div>
+      </div>
+      <!-- Aqui termina o cabeçalho -->
+
+      <!-- Aqui começa o formulário -->
+      <form class="flex flex-col">
+        <div class="flex flex-col pt-16 gap-6">
+          <h2 class="font-semibold text-heading-4 text-primary">
+            Informações do participante
+          </h2>
+
+          <div class="flex flex-col">
+            <label
+              class="text-secondary font-normal text-[14px]"
+              for="nome"
+              >Nome completo</label
+            >
+            <input
+              class="border border-stroke-default rounded-lg h-12 appearance-none focus:outline-none px-4"
+              type="text"
+              id="nome"
+              name="nome"
+              required
+            />
+          </div>
+
+          <div class="flex flex-col">
+            <label
+              class="text-secondary font-normal text-[14px]"
+              for="data-de-nascimento"
+              >Data de nascimento</label
+            >
+            <input
+              class="border border-stroke-default rounded-lg h-12 appearance-none focus:outline-none px-4"
+              type="text"
+              id="data-de-nascimento"
+              name="data-de-nascimento"
+              required
+            />
+          </div>
+
+          <div class="flex flex-col">
+            <label class="text-secondary font-normal text-[14px]" for="cpf"
+              >CPF</label
+            >
+            <input
+              class="border border-stroke-default rounded-lg h-12 appearance-none focus:outline-none px-4"
+              type="text"
+              id="cpf"
+              name="cpf"
+              required
+            />
+          </div>
+        </div>
+      </form>
+      <!-- Aqui termina o formulário -->
+    
+    </section>
+    <!-- Aqui termina a section com o nosso fomulário -->
+
+    <!-- Aqui começa a outra section que é parte azul do lado do formulário -->
+    <section
+      class="bg-brand-blue hidden lg:flex flex-col w-full h-full items-center justify-center"
+    >
+      <img
+        class="w-[500px] h-[500px]"
+        src="/assets/ilustration.png"
+        alt
+        srcset
+      />
+      <img
+        class="w-[212.25px] h-[26.49px]"
+        src="/assets/logo-trilhas-inova.svg"
+        alt
+      />
+    </section>
+    <!-- Aqui termina a outra section que é parte azul do lado do formulário -->
   </body>
 </html>

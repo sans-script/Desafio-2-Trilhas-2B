@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
+*{
+  @apply font-poppins;
+}
+
 @theme {
+  
+  /* CORES DO DESIGN NO FIGMA */
+
   /* Font */
   --font-poppins: Poppins, sans-serif;
   --text-heading-1: 32px;
@@ -15,10 +22,10 @@
   --color-brand-blue: #2135a6;
 
   /* Text */
-  --color-text-primary: #292524;
-  --color-text-secondary: #57534e;
-  --color-text-tertiary: #8f8881;
-  --color-text-highlight: #e43a12;
+  --color-primary: #292524;
+  --color-secondary: #57534e;
+  --color-tertiary: #8f8881;
+  --color-highlight: #e43a12;
 
   /* Surface */
   --color-surface-primary: #ffffff;
@@ -33,10 +40,14 @@
   --color-semantic-error: #dc2626;
 }
 
-.box {
-  @apply bg-brand-blue w-screen h-screen flex items-center justify-center;
+.custom-dropdown {
+  @apply relative inline-block;
 }
 
-.title {
-  @apply text-7xl font-poppins text-surface-primary font-bold;
+.custom-dropdown select {
+  @apply appearance-none pr-8; /* pr-8 for padding-right: 2rem (32px) */
+}
+
+.custom-dropdown .dropdown-icon {
+  @apply absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none;
 }
