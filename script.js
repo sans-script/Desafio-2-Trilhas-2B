@@ -68,8 +68,6 @@ function updateCheckboxUI(checkbox) {
   }
 }
 
-
-
 const singleCheckbox = document.getElementById("customCheckbox");
 const singleWrapper = document.getElementById("checkboxWrapper");
 const singleUncheckedIcon = document.getElementById("uncheckedIcon");
@@ -80,17 +78,59 @@ updateSingleCheckboxUI();
 
 // Escuta o clique no wrapper do checkbox
 singleWrapper.addEventListener("click", () => {
-    singleCheckbox.checked = !singleCheckbox.checked;
-    updateSingleCheckboxUI();
+  singleCheckbox.checked = !singleCheckbox.checked;
+  updateSingleCheckboxUI();
 });
 
 // Atualiza os SVGs com base no estado do checkbox
 function updateSingleCheckboxUI() {
-    if (singleCheckbox.checked) {
-        singleUncheckedIcon.classList.add("hidden");
-        singleCheckedIcon.classList.remove("hidden");
-    } else {
-        singleUncheckedIcon.classList.remove("hidden");
-        singleCheckedIcon.classList.add("hidden");
-    }
+  if (singleCheckbox.checked) {
+    singleUncheckedIcon.classList.add("hidden");
+    singleCheckedIcon.classList.remove("hidden");
+  } else {
+    singleUncheckedIcon.classList.remove("hidden");
+    singleCheckedIcon.classList.add("hidden");
+  }
 }
+
+const dateInput = document.getElementById("date");
+const cpfInput = document.getElementById("cpf");
+const phoneInput = document.getElementById("phone");
+
+// Preenchimento automático da data
+dateInput.addEventListener("input", (e) => {
+  let value = e.target.value;
+  value = value.replace(/\D/g, "");
+  if (value.length > 2 && value.length <= 4) {
+    value = value.replace(/(\d{2})(\d+)/, "$1/$2");
+  } else if (value.length > 4) {
+    value = value.replace(/(\d{2})(\d{2})(\d+)/, "$1/$2/$3");
+  }
+  e.target.value = value;
+});
+
+// Preenchimento automático do CPF
+cpfInput.addEventListener("input", (e) => {
+  let value = e.target.value;
+  value = value.replace(/\D/g, "");
+  if (value.length > 3 && value.length <= 6) {
+    value = value.replace(/(\d{3})(\d+)/, "$1.$2");
+  } else if (value.length > 6 && value.length <= 9) {
+    value = value.replace(/(\d{3})(\d{3})(\d+)/, "$1.$2.$3");
+  } else if (value.length > 9) {
+    value = value.replace(/(\d{3})(\d{3})(\d{3})(\d+)/, "$1.$2.$3-$4");
+  }
+  e.target.value = value;
+});
+
+// Preenchimento automático do telefone
+phoneInput.addEventListener("input", (e) => {
+  let value = e.target.value;
+  value = value.replace(/\D/g, "");
+  if (value.length > 2 && value.length <= 7) {
+    value = value.replace(/(\d{2})(\d+)/, "($1) $2");
+  } else if (value.length > 7) {
+    value = value.replace(/(\d{2})(\d{5})(\d+)/, "($1) $2-$3");
+  }
+  e.target.value = value;
+});
