@@ -1,5 +1,3 @@
-# Desafio 2 - Trilhas 2B
-
 ## Descrição
 
 Criação de um processo de inscrições por meio de um formulário estático.
@@ -24,6 +22,12 @@ gerenciar dependências.
 - **Live Server**: Extensão do Visual Studio Code para recarregar a página automaticamente durante o desenvolvimento.
 
 O projeto seguirá o [design disponibilizado no Figma](https://www.figma.com/design/xMXycKv7AAwE7oVGJ1whpd/Desafio-2---Trilhas-2B?node-id=22-377&p=f&t=y4NR5blp1qxlMImV-0)
+
+![desafio-2-trilhas-2-b vercel app_ (3)](https://github.com/user-attachments/assets/07824af1-2714-4467-8f00-064f162899c8)
+Figura 1: Captura de tela do formulário, disponível em https://desafio-2-trilhas-2-b.vercel.app/.
+
+![iphone](https://github.com/user-attachments/assets/0a94c59b-a751-48b4-be6e-5f9632f6d482)
+Figura 2: O projeto também pode ser acessado em dispositivos móveis.
 
 ## Pré-requisitos
 
@@ -56,7 +60,6 @@ npm start
 
 > [!NOTE]  
 > Este comando irá iniciar o Tailwind CLI em modo watch, compilando o arquivo `styles.css` para `dist/output.css` sempre que houver alterações.
-
 
 ## Visualização
 
