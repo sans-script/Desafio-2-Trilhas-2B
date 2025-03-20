@@ -30,6 +30,7 @@
   /* Surface */
   --color-surface-primary: #ffffff;
   --color-surface-secondary: #fee7d6;
+  --color-surface-secondary-8: rgba(254, 231, 214, 1);
   --color-surface-disabled: #e7e5e4;
 
   /* Stroke */
