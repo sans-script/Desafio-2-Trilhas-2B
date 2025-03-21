@@ -1,6 +1,6 @@
 ## Descrição
 
-Criação de um processo de inscrições por meio de um formulário estático.
+Criação de um processo de inscrições por meio de um formulário estático. O formulário foi criado para agilizar o cadastro de candidatos, coletando dados de forma eficiente e segura. Ele resolve o problema de inscrições desorganizadas, oferecendo uma interface intuitiva, validação de campos e conformidade com a LGPD.
 
 Este projeto utiliza as seguintes tecnologias:
 
